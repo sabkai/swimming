@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swim With Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/a8476d5a12.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0066cc;
+      color: #000;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+      color: #0066cc;
+    }
+
+    nav {
+      background-color: #000;
+    }
+
+    nav a {
+      color: #fff;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    label {
+      color: #000;
+    }
+
+    button {
+      background-color: #4b4b4b;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(19, 0, 128);
+    }
+
+    footer {
+      background-color: #232323;
+      color: #fff;
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+ .quiz-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .options li {
+            margin-bottom: 10px;
+        }
+
+        .quiz-image {
+            text-align: center;;
+            height: auto;
+        }
+  </style>
+</head>
+
+
+
+<body id="logb">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">SWIM RN  <i class="fa-solid fa-person-swimming"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="benefits.html">Benefits</a>
+            </li>
+              </a>
+            </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-regular fa-user"></i>
+            
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="login.html">Log in</a>
+            <a class="dropdown-item" href="contact.html">Contact Us</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <li class="nav-item">
+      <a class="nav-link " href="quiz.html">Quiz</a>
+        </li>
+          </ul>
+  
+        </div>
+      </nav>
+
+
+<div class="container mt-4">
+  <h1 class="text-center"></h1>
+  <div class="col-md-6">
+    <img src="https://media.istockphoto.com/id/1239645191/vector/boys-athlete-children-swimming-crawl-style-swim-racing-in-competition-indoor-pool-with.jpg?s=612x612&w=0&k=20&c=m5FCPm-9LuyV9Cn76vA1brboqLWJoSn1jqVB5BGLTyM=" alt="" class="img-fluid">
+  </div>
+  </div>
+  </div>
+ 
+  <hr>
+  <div class="text-center">
+    <p>What is a key cardiovascular benefit of regular swimming?</p>
+    <label>
+      <input type="radio" name="q1" value="a"> a)  Increased risk of heart disease
+    </label>
+    <label>
+      <input type="radio" name="q1" value="b"> b) Improved circulation and heart health
+    </label>
+    <label>
+      <input type="radio" name="q1" value="c"> c) Elevated cholesterol levels
+    </label> 
+    <p></p><button onclick="checkAnswer('q1', 'b')">Submit</button>
+    <p id="result_q1"></p>
+  </div>
+
+
+  <hr>
+  <div class="text-center">
+    <p>How does swimming contribute to muscle development?</p>
+    <label>
+      <input type="radio" name="q2" value="a"> a) Causes muscle atrophy
+    </label>
+    <label>
+      <input type="radio" name="q2" value="b"> b)  Reduces flexibility
+    </label>
+    <label>
+      <input type="radio" name="q2" value="c"> c)  Promotes overall muscle strength and tone
+    </label>
+    <p></p><button onclick="checkAnswer('q2', 'c')">Submit</button>
+    <p id="result_q2"></p>
+  </div>
+
+
+<hr>
+<div class="text-center">
+  <p>What is a safety precaution when swimming in open water?</p>
+  <label>
+    <input type="radio" name="q3" value="a"> a) Checking weather forecasts
+  </label>
+  <label>
+    <input type="radio" name="q3" value="b"> b) Swimming alone in remote areas
+  <label>
+    <input type="radio" name="q3" value="c"> c) Ignoring weather conditions
+  </label>
+  <p></p><button onclick="checkAnswer('q3', 'a')">Submit</button>
+  <p id="result_q3"></p>
+</div>
+
+
+<hr>
+<div class="text-center">
+  <p>What is a recommended safety measure for swimming in a pool?</p>
+  <label>
+    <input type="radio" name="q4" value="a"> a) Diving into shallow areas
+  </label>
+  <label>
+    <input type="radio" name="q4" value="b"> b) Using proper swim gear and equipment
+  </label>
+  <label>
+    <input type="radio" name="q4" value="c"> c) Ignoring pool rules
+  </label>
+  <p></p><button onclick="checkAnswer('q4', 'b')">Submit</button>
+  <p id="result_q4"></p>
+</div>
+
+
+<hr>
+<div class="text-center">
+  <p>What is a common benefit of swimming for people with arthritis?</p>
+  <label>
+    <input type="radio" name="q5" value="a"> a) Improving joint flexibility and reducing pain
+  </label>
+  <label>
+    <input type="radio" name="q5" value="b"> b) Aggravating joint pain
+  </label>
+  <label>
+    <input type="radio" name="q5" value="c"> c) Increasing inflammation
+  </label>
+  <p></p><button onclick="checkAnswer('q5', 'a')">Submit</button>
+  <p id="result_q5"></p>
+</div>
+
+
+<footer>
+  <div class="footer-content">
+      <div class="footer-logo">
+      </div>
+      <div class="footer-info">
+          <p>&copy; 2023 Swim With Us "Team.</p>
+          <p>Contact us: <a href="mailto:swimwithus@rn.com">swimwithus@rn.com</a></p>
+      </div>
+      <div class="footer-social">
+          <p>Follow us:</p>
+          <a href="https://www.facebook.com/?locale=ru_RU" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/?lang=ru" class="fa fa-twitter"></a>
+          <a href="https://t.me/yourusername" class="fa fa-telegram"></a>
+        
+      </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.5/d3.min.js"></script>
+<script src="index.js" charset="UTF-8"></script>
+
+
+<script>
+  
+  document.getElementById('submitBtn').addEventListener('click', function() {
+    
+    alert('Thank you!');
+  });
+</script>
+
+
+<script>
+  function checkAnswer(questionId, correctAnswer) {
+    var selectedAnswer = document.querySelector('input[name=' + questionId + ']:checked');
+
+    if (selectedAnswer) {
+      var resultElement = document.getElementById('result_' + questionId);
+      resultElement.innerHTML = selectedAnswer.value === correctAnswer
+        ? '<span style="color: green;">True!</span>'
+        : '<span style="color: red;">Not True. The answer is: ' + correctAnswer.toUpperCase() + '.</span>';
+    } else {
+      alert('Select answer');
+    }
+  }
+</script>
+
+</body>
+</html>

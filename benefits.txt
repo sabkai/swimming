@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swim With Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/a8476d5a12.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body id="logb">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">SWIM RN  <i class="fa-solid fa-person-swimming"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="benefits.html">Benefits</a>
+            </li>
+              </a>
+            </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-regular fa-user"></i>
+            
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="login.html">Log in</a>
+            <a class="dropdown-item" href="contact.html">Contact Us</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <li class="nav-item">
+      <a class="nav-link " href="quiz.html">Quiz</a>
+        </li>
+          </ul>
+  
+        </div>
+      </nav>
+  <main>
+      <section class="grid-container">
+        <article class="grid-item" id="article1">
+            <img src="https://fastlane4.com/images/Artikelbilder/allgemein/allg_swimmerheart2.jpg" alt="News Image 1">
+            <h2><strong>Strengthens the cardiovascular system</strong></h2>
+            <p id="p1">Just 30 minutes of swimming a week can protect against heart disease, stroke and type 2 diabetes.
+              A 2016 study indicates that swimming helps lower blood pressure. Researchers found that exercise had a beneficial effect on blood pressure and heart walls.</p>
+            <button type="button" class="btn btn-primary" onclick="myFunction1()">Hide/Show</button>
+        
+        </article>
+
+        <article class="grid-item" id="article2">
+            <img src="https://5element.ua/i/content/70/5el_service_00522__large.jpg" alt="News Image 1">
+            <h2><strong>Great for rehabilitation after injuries</strong></h2>
+            <p id="p2">People with an injury or condition such as arthritis may find it difficult to perform high impact exercises. 
+              For people who have suffered an injury, rehabilitation swimming helps them regain lost motor skills, facilitates socialisation and improves quality of life as swimming does not injure the joints.</p>
+            <button type="button" class="btn btn-primary" onclick="myFunction2()">Hide/Show</button>
+          
+        </article>
+
+        <article class="grid-item" id="article3">
+            <img src="https://schoolfeniks.ru/wp-content/uploads/2023/08/1140.jpg" alt="News Image 1">
+            <h2><strong>Burns calories</strong></h2>
+            <p id="p3">Swimming is a great way to burn calories. 30 minutes of active swimming burns 360 calories and engages 70% of your muscles. Swimmers can use a specific formula to determine how many calories are burned during a workout:
+
+              Total calories burned = duration (in minutes) x (MET x 3.5 x weight in kilograms) / 200 <p>
+            <button type="button" class="btn btn-primary" onclick="myFunction3()">Hide/Show</button>
+             
+
+        </article>
+    </section>
+  </main>
+ 
+<script>
+  function myFunction1() {
+  var x = document.getElementById('p1');
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById('p2');
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction3() {
+  var x = document.getElementById('p3');
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+<footer>
+  <p>&copy; 2023 Swim With Us "Team"</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.5/d3.min.js"></script>
+<script src="index.js" charset="UTF-8"></script>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
+
+
